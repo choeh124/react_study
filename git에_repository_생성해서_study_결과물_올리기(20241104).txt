@@ -23,3 +23,23 @@ git push -u origin main
 git remote add origin https://github.com/choeh124/react_study.git
 git branch -M main
 git push -u origin main
+
+------------------------------------------------------------
+git add : 파일이 변경되거나, 수정되었을 때 git에게 알려주는 역할
+git add 뒤에 파일명을 적으면 특정 파일만 git 상태에 올라감
+ex) git add README.md 
+뒤에 . 만 적으면 모든 파일이 git 상태에 올라감
+ex) git add . 
+
+commit -m "메시지" : add를 통해서 수정된 파일 혹은 추가된 파일이 상태에 올라왔으면 로컬 저장소에 저장해주는 역할
+-m 옵션을 통해서 커밋 메시지를 작성할 수 있음
+git push origin main : 로컬 저장소에서 저장된 내용을 원격 저장소에 보내주는 명령어
+git pull origin main : 원격 저장소에 변경사항이 있으면 로컬 저장소에 불러오는 명령어
+
+
+추가 사항!!
+만약 리액트 프로젝트를 만들어서 올리실 분들은
+.gitignore 파일을 만들어서 node_modules 를 추가해주세요!
+만약에 파일이 있다면 node_modules가 작성되어있는지 확인해주시고 없다면 추가해주세요~! 
+마크다운으로 간단하게 개념 정리하실 분들은 해당 git 참고하셔서 하시면 될 것 같습니다 
+https://github.com/namjunemy/TIL
